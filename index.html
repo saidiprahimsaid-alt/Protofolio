@@ -1,0 +1,1433 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ibrahim Saeed Abdulaziz | Network Infrastructure Security & SOC Analyst</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="Professional Portfolio of Ibrahim Saeed Abdulaziz — Network Infrastructure Security & SOC Analyst. Third-year IT student specializing in Cisco networking, deep packet inspection, automated threat response, and backend systems.">
+  <meta name="keywords" content="Ibrahim Saeed, Network Engineer, SOC Analyst, Cybersecurity, Cisco, Wireshark, Deep Packet Inspection, Python, Django, Java, Egypt">
+  <meta name="author" content="Ibrahim Saeed Abdulaziz">
+
+  <!-- OpenGraph -->
+  <meta property="og:title" content="Ibrahim Saeed | Network Infrastructure Security & SOC Analyst">
+  <meta property="og:description" content="Portfolio showcasing autonomous networking (NEXUS), packet analysis labs, Cisco infrastructure hardening, and secure backend architectures.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon SVG -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23070b14'/><path d='M28 25 L45 25 L45 75 L28 75 Z M55 25 L72 25 L72 45 L55 45 Z M55 55 L72 55 L72 75 L55 75 Z' fill='%2300f2fe'/></svg>">
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome Icons for Brand Logos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Cyber Grid Background Overlay -->
+  <div class="cyber-bg-overlay"></div>
+
+  <!-- Interactive Network Mesh Canvas -->
+  <canvas id="network-canvas"></canvas>
+
+  <div class="app-wrapper">
+
+    <!-- ==========================================================================
+         Header / Navigation Bar
+         ========================================================================== -->
+    <header class="site-header">
+      <div class="container nav-container">
+        <a href="#hero" class="brand-logo">
+          <div class="brand-badge-box">
+            <img src="assets/images/ibrahim-saeed.jpg" alt="Ibrahim Saeed" class="brand-avatar-img">
+          </div>
+          <div class="brand-text">
+            <span class="brand-name">Ibrahim Saeed</span>
+            <span class="brand-tag"><span class="pulse-dot"></span> SOC MONITOR: ONLINE</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Core Skills</a></li>
+          <li><a href="#dpi-lab" class="nav-link">DPI Cyber Lab</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#terminal-section" class="nav-link">SOC Terminal</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <!-- Navigation Actions -->
+        <div class="nav-actions">
+          <!-- Audio Feedback Toggle -->
+          <button class="icon-btn" id="sound-toggle-btn" title="Toggle Terminal Audio Feedback" aria-label="Toggle Sound Effects">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+              <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+            </svg>
+          </button>
+
+          <!-- Theme Toggle (Dark / Light) -->
+          <button class="icon-btn" id="theme-toggle-btn" title="Toggle Theme (Cyber Dark / Enterprise Light)" aria-label="Toggle Theme">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </button>
+
+          <!-- Download CV CTA -->
+          <button class="btn btn-primary btn-sm trigger-cv-modal">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            <span>CV</span>
+          </button>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button class="icon-btn mobile-toggle" id="mobile-toggle" aria-label="Toggle mobile menu">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- ==========================================================================
+         Hero Section
+         ========================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <!-- Hero Profile & Identity Header -->
+          <div class="hero-profile-header">
+            <div class="hero-avatar-container">
+              <div class="hero-avatar-frame">
+                <img src="assets/images/ibrahim-saeed.jpg" alt="Ibrahim Saeed Abdulaziz" class="hero-avatar-img">
+                <div class="avatar-radar-ring"></div>
+              </div>
+              <div class="avatar-status-pip" title="SOC Security Analyst Online">
+                <span class="pulse-dot"></span>
+              </div>
+            </div>
+
+            <div class="hero-header-meta">
+              <div class="status-indicator-bar">
+                <span class="pulse-dot"></span>
+                <span class="status-text">AVAILABLE FOR SOC &amp; NETWORK ROLES</span>
+                <span>|</span>
+                <span>📍 Qalyubia, Egypt</span>
+              </div>
+              <div class="hero-tags-strip">
+                <span class="badge badge-cyan"><i class="fa-solid fa-shield-halved"></i> SOC ANALYST</span>
+                <span class="badge badge-purple"><i class="fa-solid fa-network-wired"></i> CISCO &amp; DPI</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-title-group">
+            <h1 class="text-gradient">Ibrahim Saeed Abdulaziz</h1>
+            <div class="hero-headline">
+              <span>Network Infrastructure Security &amp; SOC Analyst</span>
+              <span class="typewriter-cursor"></span>
+            </div>
+          </div>
+
+          <p class="hero-bio">
+            Third-year Information Technology student specializing in Network Engineering &amp; Cybersecurity. 
+            Dedicated to building secure network architectures, performing deep packet analysis, and monitoring security operations to defend critical digital infrastructure.
+          </p>
+
+          <!-- Meta highlights -->
+          <div class="hero-meta-strip">
+            <div class="meta-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+              <span>IT (Network Track) @ New Cairo Tech Univ</span>
+            </div>
+            <div class="meta-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              <span>DEPI ISS2 Incident Response Fellow</span>
+            </div>
+            <div class="meta-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+              <span>Timezone: Cairo (UTC+3)</span>
+            </div>
+          </div>
+
+          <!-- CTA Buttons -->
+          <div class="hero-cta-group">
+            <button class="btn btn-primary trigger-cv-modal">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Download CV</span>
+            </button>
+
+            <a href="#projects" class="btn btn-secondary">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+              <span>View Projects</span>
+            </a>
+
+            <!-- Social Links -->
+            <div class="social-links-row">
+              <a href="https://github.com/saidiprahimsaid-alt" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub Profile (@saidiprahimsaid-alt)" aria-label="GitHub Profile">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/iprahim-said-said-b95700269" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn Profile" aria-label="LinkedIn Profile">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="mailto:saidiprahimsaid@gmail.com" class="social-btn" title="Send Email" aria-label="Email Ibrahim">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+              <a href="tel:+201068262081" class="social-btn" title="Call Phone (+201068262081)" aria-label="Call Ibrahim">
+                <i class="fa-solid fa-phone"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual: SOC Operations Live Console -->
+        <div class="hero-visual">
+          <div class="soc-monitor-card">
+            <div class="card-topbar">
+              <div class="window-dots">
+                <span class="dot-red"></span>
+                <span class="dot-yellow"></span>
+                <span class="dot-green"></span>
+              </div>
+              <div class="topbar-title">
+                <i class="fa-solid fa-shield-halved" style="color:var(--accent-cyan);"></i>
+                <span>NEXUS-SOC-CORE // ACTIVE DEFENSE</span>
+              </div>
+              <div class="topbar-status">
+                <span class="pulse-dot"></span>
+                <span>SECURE</span>
+              </div>
+            </div>
+
+            <div class="soc-body">
+              <!-- Live Metrics -->
+              <div class="soc-stats-grid">
+                <div class="soc-stat-box">
+                  <div class="soc-stat-number">100%</div>
+                  <div class="soc-stat-label">OSPF Convergence</div>
+                </div>
+                <div class="soc-stat-box">
+                  <div class="soc-stat-number" style="color:var(--accent-emerald);">0.0ms</div>
+                  <div class="soc-stat-label">Packet Loss</div>
+                </div>
+                <div class="soc-stat-box">
+                  <div class="soc-stat-number" style="color:var(--accent-purple);">350ms</div>
+                  <div class="soc-stat-label">Auto-Mitigation</div>
+                </div>
+              </div>
+
+              <!-- Mini Topology Visualizer -->
+              <div class="mini-topology-box">
+                <div class="topology-header">
+                  <span>ENTERPRISE INGRESS TOPOLOGY</span>
+                  <span style="color:var(--accent-emerald);">VLAN 10/20 ACTIVE</span>
+                </div>
+                <div class="topology-nodes">
+                  <div class="topo-node">
+                    <div class="node-icon-box"><i class="fa-solid fa-desktop"></i></div>
+                    <span>Endpoints</span>
+                  </div>
+                  <div class="topo-link"><div class="topo-pulse"></div></div>
+                  <div class="topo-node">
+                    <div class="node-icon-box"><i class="fa-solid fa-network-wired"></i></div>
+                    <span>Cisco Catalyst</span>
+                  </div>
+                  <div class="topo-link"><div class="topo-pulse" style="animation-delay: 1.2s;"></div></div>
+                  <div class="topo-node">
+                    <div class="node-icon-box" style="border-color:var(--accent-purple); color:var(--accent-purple);">
+                      <i class="fa-solid fa-shield-virus"></i>
+                    </div>
+                    <span>NEXUS SOC</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Live Packet Stream View -->
+              <div class="hero-stream-box" id="hero-stream-content">
+                <div class="stream-line">[<span class="tag">SYS-INIT</span>] SOC Telemetry daemon connected on Gi0/0/0</div>
+                <div class="stream-line">[<span class="tag">OSPF-v2</span>] Area 0 neighbor 10.0.0.2 established FULL adjacency</div>
+                <div class="stream-line">[<span class="warn">DPI-AUDIT</span>] Deep packet inspection module active on internal VLANs</div>
+                <div class="stream-line">[<span class="tag">DEFENSE</span>] Threat mitigation posture: AUTONOMOUS INTERCEPT READY</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Live Ticker / Telemetry Bar
+         ========================================================================== -->
+    <div class="live-ticker-wrap">
+      <div class="ticker-label">
+        <span class="pulse-dot"></span> LIVE NETWORK AUDIT
+      </div>
+      <div class="ticker-content">
+        <div class="ticker-item"><span class="code">[TCP/443]</span> 192.168.10.45:53535 -> 8.8.8.8:53 <span class="status-ok">TLS 1.3 PASS</span></div>
+        <div class="ticker-item"><span class="code">[OSPF]</span> Area 0.0.0.0 LSA-Update Ack from 10.0.0.2 <span class="status-ok">CONVERGED</span></div>
+        <div class="ticker-item"><span class="code">[ACL-RULE 104]</span> Deny TCP SYN from 203.0.113.88 to DMZ:443 <span class="status-alert">DROPPED</span></div>
+        <div class="ticker-item"><span class="code">[DPI-LOG]</span> Frame 4891: Ethernet II -> IPv4 -> UDP (DNS standard query) <span class="status-ok">INSPECTED</span></div>
+        <div class="ticker-item"><span class="code">[SIEM]</span> Normalized 1,240 event logs from Windows Active Directory &amp; Linux <span class="status-ok">HEALTHY</span></div>
+        <div class="ticker-item"><span class="code">[DRF-BACKEND]</span> POST /api/v1/auth/jwt/create/ (HTTP 200 OK) <span class="status-ok">AUTHORIZED</span></div>
+        <!-- Duplicated for seamless loop -->
+        <div class="ticker-item"><span class="code">[TCP/443]</span> 192.168.10.45:53535 -> 8.8.8.8:53 <span class="status-ok">TLS 1.3 PASS</span></div>
+        <div class="ticker-item"><span class="code">[OSPF]</span> Area 0.0.0.0 LSA-Update Ack from 10.0.0.2 <span class="status-ok">CONVERGED</span></div>
+        <div class="ticker-item"><span class="code">[ACL-RULE 104]</span> Deny TCP SYN from 203.0.113.88 to DMZ:443 <span class="status-alert">DROPPED</span></div>
+        <div class="ticker-item"><span class="code">[DPI-LOG]</span> Frame 4891: Ethernet II -> IPv4 -> UDP (DNS standard query) <span class="status-ok">INSPECTED</span></div>
+        <div class="ticker-item"><span class="code">[SIEM]</span> Normalized 1,240 event logs from Windows Active Directory &amp; Linux <span class="status-ok">HEALTHY</span></div>
+      </div>
+    </div>
+
+    <!-- ==========================================================================
+         Section 2: About Me
+         ========================================================================== -->
+    <section id="about">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag"><i class="fa-solid fa-fingerprint"></i> Identity &amp; Profile</div>
+          <h2 class="section-title">About Ibrahim Saeed</h2>
+          <p class="section-desc">
+            Bridging enterprise networking, deep packet inspection, automated security operations, and robust software engineering.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left Column: Biography & Identity Card -->
+          <div class="about-card-left">
+            <div class="about-intro-badge">
+              <div class="about-avatar-box">
+                <img src="assets/images/ibrahim-saeed.jpg" alt="Ibrahim Saeed Abdulaziz" class="about-avatar-photo">
+                <span class="avatar-status-badge" title="Verified Engineer"><i class="fa-solid fa-check"></i></span>
+              </div>
+              <div class="about-intro-text">
+                <h3>Ibrahim Saeed Abdulaziz</h3>
+                <p>Network &amp; Cybersecurity Engineer</p>
+                <div style="font-size:0.75rem; color:var(--text-muted); margin-top:2px;">
+                  📍 Qalyubia, Egypt &bull; Available Worldwide
+                </div>
+              </div>
+            </div>
+
+            <p class="about-p">
+              I am a proactive <strong>Network &amp; Cybersecurity Engineer</strong> based in Qalyubia, Egypt, with hands-on experience in network topology design, deep packet inspection, threat monitoring, and software engineering. Currently pursuing my degree in <strong>Information Technology (Network Track)</strong>, I combine solid networking fundamentals with automated security workflows.
+            </p>
+
+            <p class="about-p">
+              My technical core revolves around configuring enterprise network infrastructure (Cisco), analyzing traffic patterns (Wireshark/tcpdump), implementing web security best practices (OWASP Top 10), and developing robust backend systems in Python and Java.
+            </p>
+
+            <!-- Quick Specs Matrix -->
+            <div class="about-core-specs">
+              <div class="spec-item">
+                <span class="label">Degree</span>
+                <span class="val">B.Tech in IT (Network Track)</span>
+              </div>
+              <div class="spec-item">
+                <span class="label">Institution</span>
+                <span class="val">New Cairo Tech Univ (NCTU)</span>
+              </div>
+              <div class="spec-item">
+                <span class="label">Initiative</span>
+                <span class="val">DEPI ISS2 Incident Response</span>
+              </div>
+              <div class="spec-item">
+                <span class="label">Specialization</span>
+                <span class="val">Cisco Hardening &amp; SOC Ops</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: 4 Engineering Pillars -->
+          <div class="about-pillars">
+            <div class="pillar-card">
+              <div class="pillar-icon">
+                <i class="fa-solid fa-server"></i>
+              </div>
+              <h4>Infrastructure Hardening</h4>
+              <p>
+                Hands-on configuration of Cisco enterprise routers &amp; switches. Mastery of OSPF, EIGRP, VLAN segmentation, Inter-VLAN routing, and ACL traffic filters.
+              </p>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon">
+                <i class="fa-solid fa-binoculars"></i>
+              </div>
+              <h4>Deep Packet Inspection</h4>
+              <p>
+                Uncompromising traffic auditing with Wireshark and tcpdump across TCP, UDP, DNS, and HTTP layers to uncover anomalies, tunneling, and stealth port scans.
+              </p>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+              <h4>SOC &amp; SIEM Operations</h4>
+              <p>
+                Log aggregation, alert triage, and threat hunting. Practical incident handling informed by the MITRE ATT&amp;CK framework and defensive cyber ranges.
+              </p>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <h4>Secure Backend Engineering</h4>
+              <p>
+                Developing secure REST APIs using Python &amp; Django REST Framework and architecting maintainable OOP systems in Java with clean design patterns.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 3: Core Technical Skills
+         ========================================================================== -->
+    <section id="skills" style="background: rgba(12, 19, 34, 0.4);">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag"><i class="fa-solid fa-microchip"></i> Technical Capabilities</div>
+          <h2 class="section-title">Core Technical Skills</h2>
+          <p class="section-desc">
+            A comprehensive overview of networking protocols, packet analysis tools, operating systems, backend languages, and security operations.
+          </p>
+        </div>
+
+        <!-- Filter navigation -->
+        <div class="skills-filter-nav">
+          <button class="filter-btn active" data-filter="all">
+            <i class="fa-solid fa-list-check"></i> All Skills
+          </button>
+          <button class="filter-btn" data-filter="network">
+            <i class="fa-solid fa-shield"></i> Network &amp; Infrastructure Security
+          </button>
+          <button class="filter-btn" data-filter="backend">
+            <i class="fa-solid fa-laptop-code"></i> Software &amp; Backend Development
+          </button>
+          <button class="filter-btn" data-filter="soc">
+            <i class="fa-solid fa-user-shield"></i> Security Operations &amp; Auditing
+          </button>
+        </div>
+
+        <!-- Skills Category Cards Grid -->
+        <div class="skills-grid">
+
+          <!-- 1. Network & Infrastructure Security -->
+          <div class="skill-category-card" data-cat="network">
+            <div class="skill-category-header">
+              <div class="cat-icon"><i class="fa-solid fa-network-wired"></i></div>
+              <div class="cat-title">
+                <h3>Network &amp; Infrastructure Security</h3>
+                <span>Protocols, Routing &amp; Hardware Defense</span>
+              </div>
+            </div>
+
+            <div class="sub-skill-group">
+              <div class="sub-skill-title">
+                <i class="fa-solid fa-diagram-project"></i> Protocols &amp; Concepts
+              </div>
+              <div class="skill-tags">
+                <span class="skill-tag highlight">TCP/IP Suite</span>
+                <span class="skill-tag">OSI 7 Layers</span>
+                <span class="skill-tag highlight">OSPF Routing</span>
+                <span class="skill-tag">EIGRP</span>
+                <span class="skill-tag highlight">Subnetting &amp; VLSM</span>
+                <span class="skill-tag">VLAN Segmentation</span>
+                <span class="skill-tag">Inter-VLAN Routing</span>
+                <span class="skill-tag">NAT / PAT</span>
+                <span class="skill-tag">Access Control Lists (ACLs)</span>
+              </div>
+            </div>
+
+            <div class="sub-skill-group">
+              <div class="sub-skill-title">
+                <i class="fa-solid fa-magnifying-glass-chart"></i> Traffic Analysis &amp; Sniffing
+              </div>
+              <div class="skill-tags">
+                <span class="skill-tag highlight">Wireshark</span>
+                <span class="skill-tag highlight">tcpdump</span>
+                <span class="skill-tag highlight">Deep Packet Inspection (DPI)</span>
+                <span class="skill-tag">Protocol Dissection</span>
+                <span class="skill-tag">PCAP Stream Analysis</span>
+              </div>
+            </div>
+
+            <div class="sub-skill-group">
+              <div class="sub-skill-title">
+                <i class="fa-brands fa-linux"></i> System Administration
+              </div>
+              <div class="skill-tags">
+                <span class="skill-tag highlight">Linux (Ubuntu, Debian, Kali)</span>
+                <span class="skill-tag highlight">Windows Server (AD DS)</span>
+                <span class="skill-tag">DNS Server Mgmt</span>
+                <span class="skill-tag">Active Directory Forest</span>
+                <span class="skill-tag">Group Policy (GPO)</span>
+              </div>
+            </div>
+
+            <div class="sub-skill-group">
+              <div class="sub-skill-title">
+                <i class="fa-solid fa-flask"></i> Simulation &amp; Lab Tools
+              </div>
+              <div class="skill-tags">
+                <span class="skill-tag highlight">Cisco Packet Tracer</span>
+                <span class="skill-tag highlight">VMware Workstation Pro</span>
+                <span class="skill-tag">DD-WRT Custom Firmware</span>
+                <span class="skill-tag">Virtual Network Bridging</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Software & Backend Development -->
+          <div class="skill-category-card" data-cat="backend">
+            <div class="skill-category-header">
+              <div class="cat-icon"><i class="fa-solid fa-code"></i></div>
+              <div class="cat-title">
+                <h3>Software &amp; Backend Development</h3>
+                <span>Languages, Frameworks &amp; Architecture</span>
+              </div>
+            </div>
+
+            <div class="sub-skill-group">
+              <div class="sub-skill-title">
+                <i class="fa-solid fa-terminal"></i> Programming Languages
+              </div>
+              <div class="skill-tags">
+                <span class="skill-tag highlight">Python (Advanced)</span>
+                <span class="skill-tag highlight">Java (OOP &amp; Exceptions)</span>
+                <span class="skill-tag">C</span>
+                <span class="skill-tag">C++</span>
+                <span class="skill-tag">8086 Assembly</span>
+                <span class="skill-tag">Bash Scripting</span>
+              </div>
+            </div>
+
+            <div class="sub-skill-group">
+              <div class="sub-skill-title">
+                <i class="fa-brands fa-python"></i> Frameworks &amp; APIs
+              </div>
+              <div class="skill-tags">
+                <span class="skill-tag highlight">Django</span>
+                <span class="skill-tag highlight">Django REST Framework (DRF)</span>
+                <span class="skill-tag">JWT Authentication</span>
+                <span class="skill-tag">RESTful API Design</span>
+                <span class="skill-tag">Serialization Pipelines</span>
+              </div>
+            </div>
+
+            <div class="sub-skill-group">
+              <div class="sub-skill-title">
+                <i class="fa-solid fa-database"></i> Database &amp; OOP Architecture
+              </div>
+              <div class="skill-tags">
+                <span class="skill-tag highlight">Data Structures &amp; Algorithms</span>
+                <span class="skill-tag">Abstract Classes &amp; Polymorphism</span>
+                <span class="skill-tag highlight">Design Patterns</span>
+                <span class="skill-tag">Advanced Exception Handling</span>
+                <span class="skill-tag">PostgreSQL</span>
+                <span class="skill-tag">SQLite</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Security Operations & Auditing -->
+          <div class="skill-category-card" data-cat="soc">
+            <div class="skill-category-header">
+              <div class="cat-icon"><i class="fa-solid fa-shield-virus"></i></div>
+              <div class="cat-title">
+                <h3>Security Operations &amp; Auditing</h3>
+                <span>SOC, Threat Hunting &amp; Web Defense</span>
+              </div>
+            </div>
+
+            <div class="sub-skill-group">
+              <div class="sub-skill-title">
+                <i class="fa-solid fa-chart-line"></i> Security Operations (SOC)
+              </div>
+              <div class="skill-tags">
+                <span class="skill-tag highlight">Log Aggregation &amp; Parsing</span>
+                <span class="skill-tag highlight">SIEM Monitoring</span>
+                <span class="skill-tag highlight">Incident Triage &amp; Analysis</span>
+                <span class="skill-tag">Threat Hunting</span>
+                <span class="skill-tag">MITRE ATT&amp;CK Mapping</span>
+                <span class="skill-tag">Syslog Event Correlation</span>
+              </div>
+            </div>
+
+            <div class="sub-skill-group">
+              <div class="sub-skill-title">
+                <i class="fa-solid fa-lock"></i> Web &amp; API Security
+              </div>
+              <div class="skill-tags">
+                <span class="skill-tag highlight">OWASP Top 10 Analysis</span>
+                <span class="skill-tag">SQL Injection (SQLi) Defense</span>
+                <span class="skill-tag">CSRF &amp; XSS Prevention</span>
+                <span class="skill-tag highlight">API Security Auditing</span>
+                <span class="skill-tag">Rate Limiting &amp; WAF Rules</span>
+              </div>
+            </div>
+
+            <div class="sub-skill-group">
+              <div class="sub-skill-title">
+                <i class="fa-solid fa-flag"></i> Practical Training &amp; Cyber Ranges
+              </div>
+              <div class="skill-tags">
+                <span class="skill-tag highlight">TryHackMe Exercises</span>
+                <span class="skill-tag highlight">Practical CTF Challenges</span>
+                <span class="skill-tag">Packet Capture Audits</span>
+                <span class="skill-tag">Defensive Lab Simulations</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Interactive Deep Packet Inspection (DPI) & Cyber Lab Section
+         ========================================================================== -->
+    <section id="dpi-lab">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag"><i class="fa-solid fa-microscope"></i> Interactive Dissector</div>
+          <h2 class="section-title">Deep Packet Inspection (DPI) Cyber Lab</h2>
+          <p class="section-desc">
+            Experience Ibrahim's packet analysis workflow. Select an RFC protocol capture to dissect layers from Ethernet II to application payloads, complete with live hex dumps and SOC triage notes.
+          </p>
+        </div>
+
+        <div class="dpi-lab-container">
+          <!-- Top bar with packet tabs -->
+          <div class="dpi-header-bar">
+            <div class="dpi-title">
+              <i class="fa-solid fa-terminal"></i>
+              <span id="dpi-packet-title">DNS Query (A Record: api.infrastructure.net)</span>
+              <span class="badge badge-cyan" id="dpi-packet-badge">INFO: RESOLUTION</span>
+            </div>
+
+            <div class="dpi-packets-selector">
+              <button class="dpi-tab-btn active" data-packet="dns">
+                <i class="fa-solid fa-globe"></i> 1. DNS Query
+              </button>
+              <button class="dpi-tab-btn" data-packet="syn_scan">
+                <i class="fa-solid fa-radar"></i> 2. Nmap SYN Scan
+              </button>
+              <button class="dpi-tab-btn" data-packet="sqli_attack">
+                <i class="fa-solid fa-bug"></i> 3. OWASP SQLi
+              </button>
+              <button class="dpi-tab-btn" data-packet="ospf_hello">
+                <i class="fa-solid fa-route"></i> 4. OSPF Hello
+              </button>
+            </div>
+          </div>
+
+          <!-- Dissector Grid: Left = Layers, Right = Hex Dump + Analysis -->
+          <div class="dpi-content-grid">
+            <!-- Layers Panel -->
+            <div class="dpi-layers-panel">
+              <div style="font-family:var(--font-mono); font-size:0.75rem; color:var(--text-muted); margin-bottom:0.35rem; display:flex; justify-content:space-between;">
+                <span>PACKET FRAME LAYERS (OSI MODEL)</span>
+                <span id="dpi-packet-time">12:18:44.204812</span>
+              </div>
+              <div id="dpi-layers-list">
+                <!-- Dynamically populated by packet-inspector.js -->
+              </div>
+            </div>
+
+            <!-- Hexdump & SOC Triage Panel -->
+            <div class="dpi-hexdump-panel">
+              <div class="hex-title">
+                <span>HEXADECIMAL DUMP &amp; ASCII DISSECTION</span>
+                <span>OFFSET / BYTES</span>
+              </div>
+              <pre class="hex-data-view" id="dpi-hexdump-code"></pre>
+
+              <div class="hex-analysis-box">
+                <h5 id="dpi-analysis-title">SOC Triage Note: Legitimate DNS Query</h5>
+                <p id="dpi-analysis-body" style="font-size:0.8rem; color:var(--text-secondary); line-height:1.5;">
+                  Standard query originating from internal VLAN host. FQDN matches approved infrastructure endpoint. No tunneling or exfiltration entropy detected.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 4: Projects & Hands-on Labs
+         ========================================================================== -->
+    <section id="projects" style="background: rgba(12, 19, 34, 0.4);">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag"><i class="fa-solid fa-flask-vial"></i> Engineering Work</div>
+          <h2 class="section-title">Projects &amp; Hands-on Labs</h2>
+          <p class="section-desc">
+            Real-world network architectures, graduation engineering systems, and defensive cybersecurity labs.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- 1. NEXUS (Graduation Project - Featured) -->
+          <div class="project-card featured">
+            <div class="project-card-banner">
+              <div class="project-icon-box">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+              <span class="badge badge-purple">Graduation Project (In Progress)</span>
+            </div>
+
+            <div class="project-card-body">
+              <h3 class="project-title">1. NEXUS — AI-Powered Self-Healing &amp; Autonomous Network System</h3>
+              <p class="project-desc">
+                An autonomous network framework integrating physical Cisco enterprise hardware with machine learning threat detection models and a centralized SOC Dashboard.
+              </p>
+
+              <div class="project-focus-box">
+                <div class="focus-heading">
+                  <i class="fa-solid fa-crosshairs"></i> Core Architectural Concepts
+                </div>
+                <div class="focus-content">
+                  Packet inspection pipelines, automated incident response workflows, and SIEM event logging. Automatically isolates malicious switch ports and re-routes critical flows dynamically.
+                </div>
+              </div>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag">Cisco Infrastructure</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Machine Learning</span>
+                <span class="tech-tag">SIEM Concepts</span>
+                <span class="tech-tag">SOC Dashboard</span>
+              </div>
+            </div>
+
+            <div class="project-card-footer">
+              <button class="btn btn-secondary btn-sm" data-project-key="nexus">
+                <span>View Architecture Specs</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </button>
+              <span style="font-family:var(--font-mono); font-size:0.75rem; color:var(--accent-purple);">
+                ● Active Capstone Lab
+              </span>
+            </div>
+          </div>
+
+          <!-- 2. Enterprise Payment & E-Commerce System Architecture -->
+          <div class="project-card">
+            <div class="project-card-banner">
+              <div class="project-icon-box">
+                <i class="fa-solid fa-credit-card"></i>
+              </div>
+              <span class="badge badge-cyan">Academic / Practical Lab</span>
+            </div>
+
+            <div class="project-card-body">
+              <h3 class="project-title">2. Enterprise Payment &amp; E-Commerce System Architecture</h3>
+              <p class="project-desc">
+                Designing an extensible, maintainable backend core using Object-Oriented Programming (OOP) in Java. Built with strict transaction atomicity and resilient error boundaries.
+              </p>
+
+              <div class="project-focus-box">
+                <div class="focus-heading">
+                  <i class="fa-solid fa-crosshairs"></i> Core Architectural Concepts
+                </div>
+                <div class="focus-content">
+                  Polymorphic payment processing, custom hierarchical exception handling, decoupled strategy design patterns, and thread-safe account reconciliation.
+                </div>
+              </div>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag">Java Core</span>
+                <span class="tech-tag">OOP Principles</span>
+                <span class="tech-tag">Exception Handling</span>
+                <span class="tech-tag">Design Patterns</span>
+              </div>
+            </div>
+
+            <div class="project-card-footer">
+              <button class="btn btn-secondary btn-sm" data-project-key="payment">
+                <span>Deep Dive Details</span>
+              </button>
+              <a href="https://github.com/saidiprahimsaid-alt" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                <i class="fa-brands fa-github"></i>
+                <span>View Repository</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- 3. Traffic Analysis & Protocol Auditing Labs -->
+          <div class="project-card">
+            <div class="project-card-banner">
+              <div class="project-icon-box">
+                <i class="fa-solid fa-network-wired"></i>
+              </div>
+              <span class="badge badge-amber">Practical Training &amp; Cyber Ranges</span>
+            </div>
+
+            <div class="project-card-body">
+              <h3 class="project-title">3. Traffic Analysis &amp; Protocol Auditing Labs</h3>
+              <p class="project-desc">
+                Performing deep packet captures and network traffic analysis using Wireshark and tcpdump across DNS, TCP, and UDP protocols in enterprise scenarios.
+              </p>
+
+              <div class="project-focus-box">
+                <div class="focus-heading">
+                  <i class="fa-solid fa-crosshairs"></i> Core Architectural Concepts
+                </div>
+                <div class="focus-content">
+                  Deep Packet Inspection (DPI), anomaly detection, DNS tunneling discovery, TCP handshake auditing, and OWASP Top 10 web security exploit dissection.
+                </div>
+              </div>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag">Wireshark</span>
+                <span class="tech-tag">tcpdump</span>
+                <span class="tech-tag">Linux</span>
+                <span class="tech-tag">OWASP Framework</span>
+                <span class="tech-tag">Cyber Ranges</span>
+              </div>
+            </div>
+
+            <div class="project-card-footer">
+              <button class="btn btn-secondary btn-sm" data-project-key="traffic">
+                <span>Lab Findings Report</span>
+              </button>
+              <a href="#dpi-lab" class="btn btn-emerald btn-sm">
+                <i class="fa-solid fa-play"></i>
+                <span>Interactive Dissector</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- 4. Django REST API Services & Web Security Integration -->
+          <div class="project-card">
+            <div class="project-card-banner">
+              <div class="project-icon-box">
+                <i class="fa-solid fa-server"></i>
+              </div>
+              <span class="badge badge-emerald">In Progress / Practical Lab</span>
+            </div>
+
+            <div class="project-card-body">
+              <h3 class="project-title">4. Django REST API Services &amp; Web Security Integration</h3>
+              <p class="project-desc">
+                Developing secure RESTful APIs with Django REST Framework for robust enterprise backend integration with bulletproof endpoint hardening.
+              </p>
+
+              <div class="project-focus-box">
+                <div class="focus-heading">
+                  <i class="fa-solid fa-crosshairs"></i> Core Architectural Concepts
+                </div>
+                <div class="focus-content">
+                  Secure token-based authentication (JWT), role-based permission management, serialized payload validation, and protection against SQLi, CSRF, and XSS.
+                </div>
+              </div>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Django</span>
+                <span class="tech-tag">Django REST Framework</span>
+                <span class="tech-tag">PostgreSQL / SQLite</span>
+                <span class="tech-tag">OWASP Defense</span>
+              </div>
+            </div>
+
+            <div class="project-card-footer">
+              <button class="btn btn-secondary btn-sm" data-project-key="django_api">
+                <span>API Architecture</span>
+              </button>
+              <a href="https://github.com/saidiprahimsaid-alt" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                <i class="fa-brands fa-github"></i>
+                <span>View Repository</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 5: Education & Training Programs
+         ========================================================================== -->
+    <section id="education">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag"><i class="fa-solid fa-graduation-cap"></i> Academic Pathway</div>
+          <h2 class="section-title">Education &amp; Training Programs</h2>
+          <p class="section-desc">
+            Rigorous academic foundation in Information Technology paired with national scholarship initiatives and professional certifications.
+          </p>
+        </div>
+
+        <div class="timeline-wrapper">
+          <div class="timeline-line"></div>
+
+          <!-- 1. Bachelor of Technology -->
+          <div class="timeline-item">
+            <div class="timeline-node"></div>
+            <div class="timeline-card">
+              <div class="timeline-top">
+                <span class="timeline-org">New Cairo Technological University (NCTU)</span>
+                <span class="timeline-period">Third Year (Current)</span>
+              </div>
+              <h3 class="timeline-degree">Bachelor of Technology in Information Technology (ICT Network Track)</h3>
+              <p class="timeline-details">
+                Faculty of Industrial Technology and Energy. Focused on enterprise network design, Cisco hardware switching/routing, operating system internals, packet level defense, and applied cybersecurity engineering.
+              </p>
+              <div class="timeline-highlights">
+                <span class="badge badge-cyan">Network Architecture</span>
+                <span class="badge badge-cyan">Cisco IOS</span>
+                <span class="badge badge-cyan">Operating Systems</span>
+                <span class="badge badge-cyan">Cybersecurity Fundamentals</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. DEPI -->
+          <div class="timeline-item">
+            <div class="timeline-node"></div>
+            <div class="timeline-card">
+              <div class="timeline-top">
+                <span class="timeline-org">Ministry of Communications &amp; Information Technology (MCIT)</span>
+                <span class="timeline-period">Fellowship Program</span>
+              </div>
+              <h3 class="timeline-degree">Digital Egypt Pioneers Initiative (DEPI)</h3>
+              <p class="timeline-details">
+                <strong>Cyber Security Incident Response Analyst (ISS2 Track)</strong>. Intensive government-backed scholarship covering enterprise SOC workflows, incident investigation, threat intelligence, triage methodologies, and malware behavioral analysis.
+              </p>
+              <div class="timeline-highlights">
+                <span class="badge badge-purple">Incident Response (IR)</span>
+                <span class="badge badge-purple">SOC Operations</span>
+                <span class="badge badge-purple">MITRE ATT&amp;CK</span>
+                <span class="badge badge-purple">Threat Intelligence</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. NTI -->
+          <div class="timeline-item">
+            <div class="timeline-node"></div>
+            <div class="timeline-card">
+              <div class="timeline-top">
+                <span class="timeline-org">National Telecommunication Institute (NTI)</span>
+                <span class="timeline-period">Professional Track</span>
+              </div>
+              <h3 class="timeline-degree">Network Security Training Program</h3>
+              <p class="timeline-details">
+                Specialized hands-on curriculum focused on enterprise network security, perimeter defense, firewall ACL rules, VPN implementation, and traffic inspection against infrastructure attacks.
+              </p>
+              <div class="timeline-highlights">
+                <span class="badge badge-emerald">Firewall Architectures</span>
+                <span class="badge badge-emerald">VPN &amp; Tunneling</span>
+                <span class="badge badge-emerald">Traffic Auditing</span>
+                <span class="badge badge-emerald">Network Hardening</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Oracle Professional Achievement -->
+          <div class="timeline-item">
+            <div class="timeline-node"></div>
+            <div class="timeline-card">
+              <div class="timeline-top">
+                <span class="timeline-org">Oracle University</span>
+                <span class="timeline-period">Certified Achievement</span>
+              </div>
+              <h3 class="timeline-degree">Oracle Professional Achievement: AI for You Certification</h3>
+              <p class="timeline-details">
+                Official badge and certification validating artificial intelligence principles, machine learning lifecycle, and autonomous intelligence paradigms applicable to modern automated cyber defense.
+              </p>
+              <div class="timeline-highlights">
+                <span class="badge badge-amber">Artificial Intelligence</span>
+                <span class="badge badge-amber">Machine Learning</span>
+                <span class="badge badge-amber">Oracle Cloud</span>
+                <span class="badge badge-amber">Autonomous Defense</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Interactive Cyber SOC Terminal (Dedicated Experience)
+         ========================================================================== -->
+    <section id="terminal-section" style="background: rgba(12, 19, 34, 0.4);">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag"><i class="fa-solid fa-terminal"></i> Live Interactive CLI</div>
+          <h2 class="section-title">SOC Analyst Terminal</h2>
+          <p class="section-desc">
+            Interact with Ibrahim's simulated command-line interface. Inspect credentials, scan mock endpoints, test defense modules, or export resume records directly via bash commands.
+          </p>
+        </div>
+
+        <div class="soc-terminal-wrapper">
+          <div class="terminal-header">
+            <div class="terminal-title">
+              <i class="fa-solid fa-network-wired"></i>
+              <span>ibrahim@soc-analyst-terminal:~ (bash v5.2)</span>
+            </div>
+            <div class="terminal-actions-bar">
+              <button class="term-action-btn" id="term-clear-btn">Clear Buffer</button>
+            </div>
+          </div>
+
+          <div class="terminal-body" id="terminal-body">
+            <!-- Populated via terminal.js -->
+          </div>
+
+          <div class="terminal-command-row" style="padding: 0.5rem 1.5rem 1rem 1.5rem; background:#040711;">
+            <span class="term-prompt">analyst@soc-console:~$</span>
+            <input type="text" class="term-input" id="terminal-input" placeholder="Type a command (e.g. 'help', 'scan', 'whoami', 'nexus', 'skills')..." autocomplete="off" spellcheck="false">
+          </div>
+
+          <div class="terminal-quick-chips">
+            <span class="quick-chip-label">Quick Commands:</span>
+            <button class="quick-chip" data-cmd="help">help</button>
+            <button class="quick-chip" data-cmd="whoami">whoami</button>
+            <button class="quick-chip" data-cmd="skills">skills</button>
+            <button class="quick-chip" data-cmd="projects">projects</button>
+            <button class="quick-chip" data-cmd="nexus">nexus</button>
+            <button class="quick-chip" data-cmd="scan 192.168.10.1">scan</button>
+            <button class="quick-chip" data-cmd="soc">soc</button>
+            <button class="quick-chip" data-cmd="cv">cv</button>
+            <button class="quick-chip" data-cmd="contact">contact</button>
+            <button class="quick-chip" data-cmd="clear">clear</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 6: Contact & Social Links
+         ========================================================================== -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag"><i class="fa-solid fa-satellite-dish"></i> Open Channels</div>
+          <h2 class="section-title">Contact &amp; Collaboration</h2>
+          <p class="section-desc">
+            Feel free to reach out for network engineering opportunities, SOC analyst roles, freelance contracts, or technical inquiries.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Contact Details & Freelance Platforms -->
+          <div class="contact-info-cards">
+            <!-- Location -->
+            <div class="contact-card">
+              <div class="contact-card-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="contact-card-details">
+                <span class="contact-card-title">Location</span>
+                <span class="contact-card-val">Qalyubia, Egypt</span>
+              </div>
+              <span class="badge badge-emerald">UTC+3 (Cairo)</span>
+            </div>
+
+            <!-- Phone / WhatsApp -->
+            <div class="contact-card">
+              <div class="contact-card-icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="contact-card-details">
+                <span class="contact-card-title">Phone &amp; WhatsApp</span>
+                <span class="contact-card-val">+20 1068262081</span>
+              </div>
+              <div style="display:flex; gap:6px;">
+                <button class="contact-action-btn" data-copy="+201068262081">Copy</button>
+                <button class="contact-action-btn" id="quick-whatsapp-btn" style="color:var(--accent-emerald);">WhatsApp</button>
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="contact-card">
+              <div class="contact-card-icon">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="contact-card-details">
+                <span class="contact-card-title">Email Address</span>
+                <span class="contact-card-val">saidiprahimsaid@gmail.com</span>
+              </div>
+              <div style="display:flex; gap:6px;">
+                <button class="contact-action-btn" data-copy="saidiprahimsaid@gmail.com">Copy</button>
+                <a href="mailto:saidiprahimsaid@gmail.com" class="contact-action-btn" style="color:var(--accent-cyan);">Email</a>
+              </div>
+            </div>
+
+            <!-- Profiles: LinkedIn & GitHub -->
+            <div class="contact-card">
+              <div class="contact-card-icon">
+                <i class="fa-brands fa-linkedin"></i>
+              </div>
+              <div class="contact-card-details">
+                <span class="contact-card-title">LinkedIn Profile</span>
+                <a href="https://www.linkedin.com/in/iprahim-said-said-b95700269" target="_blank" rel="noopener noreferrer" class="contact-card-val" style="color:var(--accent-cyan); font-size:0.9rem;">
+                  linkedin.com/in/iprahim-said-said-b95700269
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-card-icon">
+                <i class="fa-brands fa-github"></i>
+              </div>
+              <div class="contact-card-details">
+                <span class="contact-card-title">GitHub Profile</span>
+                <a href="https://github.com/saidiprahimsaid-alt" target="_blank" rel="noopener noreferrer" class="contact-card-val" style="color:var(--accent-cyan); font-size:0.9rem;">
+                  github.com/saidiprahimsaid-alt
+                </a>
+              </div>
+            </div>
+
+            <!-- Freelance Platforms Availability -->
+            <div class="freelance-box">
+              <div class="freelance-box-header">
+                <h4><i class="fa-solid fa-briefcase"></i> Freelance Platforms</h4>
+                <span class="badge badge-emerald">OPEN FOR ORDERS</span>
+              </div>
+              <p style="font-size:0.85rem; color:var(--text-secondary); line-height:1.5;">
+                Available for network topology design, packet trace auditing, Python automation scripts, and backend consulting across top regional platforms:
+              </p>
+              <div class="freelance-badges">
+                <div class="freelance-badge-item">
+                  <span class="avail-dot"></span> Mostaql (مستقل)
+                </div>
+                <div class="freelance-badge-item">
+                  <span class="avail-dot"></span> Khamsat (خمسات)
+                </div>
+                <div class="freelance-badge-item">
+                  <span class="avail-dot"></span> Nafezly (نفذلي)
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Message Dispatcher -->
+          <div class="contact-form-card">
+            <h3 style="font-size:1.35rem; font-weight:700; margin-bottom:0.5rem; display:flex; align-items:center; gap:8px;">
+              <i class="fa-solid fa-paper-plane" style="color:var(--accent-cyan);"></i> Dispatch Direct Message
+            </h3>
+            <p style="font-size:0.88rem; color:var(--text-secondary); margin-bottom:1.5rem;">
+              Fill in your inquiry details below. The message will automatically route directly to Ibrahim's verified inbox.
+            </p>
+
+            <form id="contact-form">
+              <div class="form-group">
+                <label class="form-label" for="form-name">Your Full Name *</label>
+                <input type="text" id="form-name" class="form-input" placeholder="e.g. John Doe / Engineering Manager" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="form-email">Your Work Email *</label>
+                <input type="email" id="form-email" class="form-input" placeholder="e.g. name@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="form-subject">Subject / Inquiry Type</label>
+                <select id="form-subject" class="form-select">
+                  <option value="Network Infrastructure Opportunity">Network Infrastructure Role</option>
+                  <option value="SOC / Incident Response Opportunity">SOC Analyst / Security Role</option>
+                  <option value="Freelance Project Inquiry">Freelance Project (Mostaql / Direct)</option>
+                  <option value="Graduation Project Collaboration">Research / NEXUS Collaboration</option>
+                  <option value="General Technical Inquiry">General Technical Inquiry</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="form-message">Message Details *</label>
+                <textarea id="form-message" class="form-textarea" placeholder="Describe project requirements, role scope, or any questions..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width:100%; padding:0.85rem;">
+                <i class="fa-solid fa-paper-plane"></i>
+                <span>Send Message Directly</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Footer
+         ========================================================================== -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <div class="brand-logo">
+              <div class="brand-badge">IS</div>
+              <span class="brand-name">Ibrahim Saeed Abdulaziz</span>
+            </div>
+            <p style="font-size:0.85rem; color:var(--text-secondary); max-width:420px; margin-top:6px;">
+              Network Infrastructure Security &amp; SOC Analyst. Committed to building fortified architectures and defending mission-critical digital systems.
+            </p>
+          </div>
+
+          <div class="footer-socials">
+            <a href="https://github.com/saidiprahimsaid-alt" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/iprahim-said-said-b95700269" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:saidiprahimsaid@gmail.com" class="social-btn" aria-label="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="tel:+201068262081" class="social-btn" aria-label="Phone">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div>
+            &copy; 2026 Ibrahim Saeed Abdulaziz. All rights reserved.
+          </div>
+          <div class="footer-security-stamp">
+            <span class="pulse-dot"></span>
+            <span>Zero-Trust Architecture &bull; Packet Level Integrity</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div> <!-- /app-wrapper -->
+
+  <!-- ==========================================================================
+       Project Deep Dive Modal
+       ========================================================================== -->
+  <div class="modal-backdrop" id="project-modal">
+    <div class="modal-window">
+      <div class="modal-header">
+        <h3 id="modal-project-title">Project Title</h3>
+        <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body" id="modal-project-body">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       Curriculum Vitae (CV) Preview & Print Modal
+       ========================================================================== -->
+  <div class="modal-backdrop" id="cv-modal">
+    <div class="modal-window" style="max-width: 900px;">
+      <div class="modal-header">
+        <div style="display:flex; align-items:center; gap:8px;">
+          <i class="fa-solid fa-file-invoice" style="color:var(--accent-cyan);"></i>
+          <h3>Curriculum Vitae — Ibrahim Saeed Abdulaziz</h3>
+        </div>
+        <div style="display:flex; align-items:center; gap:8px;">
+          <button class="btn btn-primary btn-sm" id="print-cv-btn">
+            <i class="fa-solid fa-print"></i>
+            <span>Print / Save as PDF</span>
+          </button>
+          <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="cv-preview-paper">
+          <!-- CV Header -->
+          <div class="cv-header">
+            <div style="display:flex; align-items:center; gap:1.25rem;">
+              <img src="assets/images/ibrahim-saeed.jpg" alt="Ibrahim Saeed" class="cv-avatar-photo">
+              <div>
+                <h1 class="cv-name">IBRAHIM SAEED ABDULAZIZ</h1>
+                <div class="cv-title">Network Infrastructure Security &amp; SOC Analyst</div>
+                <div style="font-size:0.85rem; color:#64748b; margin-top:4px;">
+                  Information Technology Student (Network Track) &bull; Qalyubia, Egypt
+                </div>
+              </div>
+            </div>
+            <div class="cv-contact">
+              <div><strong>Phone:</strong> +20 1068262081</div>
+              <div><strong>Email:</strong> saidiprahimsaid@gmail.com</div>
+              <div><strong>GitHub:</strong> github.com/saidiprahimsaid-alt</div>
+              <div><strong>LinkedIn:</strong> linkedin.com/in/iprahim-said-said-b95700269</div>
+            </div>
+          </div>
+
+          <!-- Professional Summary -->
+          <div class="cv-section">
+            <div class="cv-section-title">Professional Summary</div>
+            <p class="cv-item-desc">
+              Third-year Information Technology student specializing in Network Engineering &amp; Cybersecurity. Dedicated to building secure network architectures, performing deep packet analysis, and monitoring security operations to defend critical digital infrastructure. Combines solid enterprise Cisco networking with automated threat response in Python and backend software engineering in Java and Django REST Framework.
+            </p>
+          </div>
+
+          <!-- Education & Fellowships -->
+          <div class="cv-section">
+            <div class="cv-section-title">Education &amp; Training Programs</div>
+            
+            <div class="cv-item">
+              <div class="cv-item-title">
+                <span>New Cairo Technological University (NCTU) — Faculty of Industrial Technology and Energy</span>
+                <span>2022 – Present</span>
+              </div>
+              <div class="cv-item-sub">Bachelor of Technology in Information Technology (ICT Network Track)</div>
+              <div class="cv-item-desc">
+                Third-year student. Core focus on Cisco routing &amp; switching, OSPF/EIGRP topologies, operating system security, and network administration.
+              </div>
+            </div>
+
+            <div class="cv-item">
+              <div class="cv-item-title">
+                <span>Digital Egypt Pioneers Initiative (DEPI) — MCIT</span>
+                <span>Fellowship</span>
+              </div>
+              <div class="cv-item-sub">Cyber Security Incident Response Analyst (ISS2 Track)</div>
+              <div class="cv-item-desc">
+                Specialized training in SOC operations, event correlation, incident triage, threat hunting, and MITRE ATT&amp;CK analysis.
+              </div>
+            </div>
+
+            <div class="cv-item">
+              <div class="cv-item-title">
+                <span>National Telecommunication Institute (NTI)</span>
+                <span>Training Program</span>
+              </div>
+              <div class="cv-item-sub">Network Security Training Program</div>
+              <div class="cv-item-desc">
+                Comprehensive training on firewall management, access control lists, VPN tunnels, and network perimeter protection.
+              </div>
+            </div>
+
+            <div class="cv-item">
+              <div class="cv-item-title">
+                <span>Oracle University Achievement</span>
+                <span>Certified Badge</span>
+              </div>
+              <div class="cv-item-sub">AI for You Certification &amp; Badge</div>
+              <div class="cv-item-desc">
+                Validation in foundational artificial intelligence concepts and autonomous machine learning workflows.
+              </div>
+            </div>
+          </div>
+
+          <!-- Technical Skills -->
+          <div class="cv-section">
+            <div class="cv-section-title">Core Technical Skills</div>
+            <div style="font-size:0.85rem; color:#334155; line-height:1.7;">
+              <div><strong>Network Protocols &amp; Concepts:</strong> TCP/IP Suite, OSI Model, OSPF, EIGRP, Subnetting/VLSM, VLAN Segmentation, Inter-VLAN Routing, NAT/PAT, ACLs.</div>
+              <div><strong>Traffic Analysis &amp; Packet Inspection:</strong> Wireshark, tcpdump, Deep Packet Inspection (DPI), Protocol dissection, Anomaly detection.</div>
+              <div><strong>System Administration:</strong> Linux (Ubuntu, Debian, Kali), Windows Server (AD DS, DNS, Active Directory Forest Management, GPO).</div>
+              <div><strong>Simulation &amp; Lab Tools:</strong> Cisco Packet Tracer, VMware Workstation Pro, DD-WRT Custom Firmware.</div>
+              <div><strong>Programming &amp; Backends:</strong> Python, Java (OOP &amp; Advanced Exception Handling), C, C++, 8086 Assembly, Django, Django REST Framework, PostgreSQL, SQLite.</div>
+              <div><strong>SOC &amp; Web Security:</strong> SIEM Monitoring, Log Aggregation, Incident Triage, OWASP Top 10 Vulnerabilities, API Auditing, TryHackMe, Practical CTFs.</div>
+            </div>
+          </div>
+
+          <!-- Featured Projects -->
+          <div class="cv-section">
+            <div class="cv-section-title">Key Projects &amp; Labs</div>
+
+            <div class="cv-item">
+              <div class="cv-item-title">
+                <span>NEXUS — AI-Powered Self-Healing &amp; Autonomous Network System</span>
+                <span>Graduation Project</span>
+              </div>
+              <div class="cv-item-sub">Technologies: Cisco Infrastructure, Python, Machine Learning, SIEM, SOC Dashboard</div>
+              <div class="cv-item-desc">
+                Architecting an autonomous network system integrating physical Cisco hardware with ML-driven threat detection models. Features automated SPAN packet inspection, dynamic switch port isolation, and real-time SOC incident telemetry.
+              </div>
+            </div>
+
+            <div class="cv-item">
+              <div class="cv-item-title">
+                <span>Enterprise Payment &amp; E-Commerce System Architecture</span>
+                <span>Practical Lab</span>
+              </div>
+              <div class="cv-item-sub">Technologies: Java, OOP Principles, Exception Handling, Design Patterns</div>
+              <div class="cv-item-desc">
+                Engineered an extensible payment engine implementing polymorphic payment gateways, robust custom exception hierarchies, and transactional integrity.
+              </div>
+            </div>
+
+            <div class="cv-item">
+              <div class="cv-item-title">
+                <span>Traffic Analysis &amp; Protocol Auditing Labs</span>
+                <span>Cyber Range Training</span>
+              </div>
+              <div class="cv-item-sub">Technologies: Wireshark, tcpdump, Linux, OWASP Framework</div>
+              <div class="cv-item-desc">
+                Executed packet capture and dissection across DNS, TCP, and UDP protocols. Identified DNS exfiltration attempts, stealth SYN scans, and web application attack vectors.
+              </div>
+            </div>
+
+            <div class="cv-item">
+              <div class="cv-item-title">
+                <span>Django REST API Services &amp; Web Security Integration</span>
+                <span>Practical Lab</span>
+              </div>
+              <div class="cv-item-sub">Technologies: Python, Django, Django REST Framework, SQLite/PostgreSQL</div>
+              <div class="cv-item-desc">
+                Built secure RESTful endpoints with JWT token authentication, granular RBAC, and proactive mitigation of OWASP Top 10 vulnerabilities (SQLi, CSRF, XSS).
+              </div>
+            </div>
+          </div>
+
+          <!-- Platforms -->
+          <div class="cv-section" style="margin-bottom:0;">
+            <div class="cv-section-title">Availability &amp; Platforms</div>
+            <p class="cv-item-desc">
+              Available for full-time / internship opportunities, freelance consulting on <strong>Mostaql</strong>, <strong>Khamsat</strong>, and <strong>Nafezly</strong>, and technical research collaborations.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Box -->
+  <div class="toast-box" id="toast-box">Notification message</div>
+
+  <!-- Scripts -->
+  <script src="assets/js/network-canvas.js"></script>
+  <script src="assets/js/packet-inspector.js"></script>
+  <script src="assets/js/terminal.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
